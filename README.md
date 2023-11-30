@@ -6,7 +6,8 @@ laravel + reacjs
 - Mã sinh viên: 2121110126
 - lớp : CCQ2111D
 ## ĐỀ TÀI
-- Tên đề tài :
+- Tên đề tài : Shop Thời Trang
+
 - Công Nghệ: laravel + ReactJS +(Công nghệ giao diện tự chọn : Tailwind hoặc Bootstrap)
 ## KẾ HOẠCH THỰC HIỆN
 ### Tuần 1 (23/11/2023 đến 30/11 Push ): Tổ chức project + Thiết kết CSDL
