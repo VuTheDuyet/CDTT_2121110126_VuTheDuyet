@@ -10,3 +10,4 @@ class Order extends Model
     use HasFactory;
     protected $table='db_order';
 }
+

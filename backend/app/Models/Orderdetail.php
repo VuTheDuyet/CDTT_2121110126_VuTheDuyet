@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Orderdetail extends Model
 {
-    use HasFactory;
+ 	use HasFactory;
     protected $table='db_orderdetail';
-public $timestamps = false;
-
+    public $timestamps = false;
 }
+

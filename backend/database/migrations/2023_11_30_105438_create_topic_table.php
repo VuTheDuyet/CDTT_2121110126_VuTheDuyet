@@ -11,17 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('db_productsale', function (Blueprint $table) {
+        Schema::create('db_topic', function (Blueprint $table) {
             $table->id(); //id
-            $table->unsignedInteger('product_id');
-            $table->double('pricesale');
-            $table->unsignedInteger('qty');
-            $table->datetime('date_begin');
-            $table->datetime('date_end');
+            $table->string('name', 1000);
+            $table->string('slug', 1000);
+            $table->unsignedInteger('sort_order')->default(0);
+            $table->string('description',1000);
             $table->timestamps(); //created_at, updated_at
             $table->unsignedInteger('created_by')->default(1);
-                 $table->unsignedInteger('updated_by')->nullable();
-            
+            $table->unsignedInteger('updated_by')->nullable();
+            $table->unsignedTinyInteger('status')->default(2);
         });
     }
 
@@ -30,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('db_productsale');
+        Schema::dropIfExists('db_topic');
     }
 };

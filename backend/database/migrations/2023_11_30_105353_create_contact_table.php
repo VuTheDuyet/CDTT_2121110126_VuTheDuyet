@@ -11,19 +11,20 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('db_order', function (Blueprint $table) {
+        Schema::create('db_contact', function (Blueprint $table) {
             $table->id(); //id
-       $table->unsignedInteger('user_id');
-       $table->string('delivery_name', 255);
-       $table->string('delivery_gender', 255);
-       $table->string('delivery_email', 255);
-            $table->string('delivery_phone', 255);
-            $table->string('delivery_address', 1000);
-       $table->string('note', 1000);
+            $table->unsignedInteger('user_id')->nullable();
+            $table->string('name');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('title');
+            $table->mediumText('content');
+            $table->unsignedInteger('replay_id')->nullable();
             $table->timestamps(); //created_at, updated_at
             $table->unsignedInteger('created_by')->default(1);
             $table->unsignedInteger('updated_by')->nullable();
             $table->unsignedTinyInteger('status')->default(2);
+
         });
     }
 
@@ -32,6 +33,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('db_order');
+        Schema::dropIfExists('db_contact');
     }
 };
