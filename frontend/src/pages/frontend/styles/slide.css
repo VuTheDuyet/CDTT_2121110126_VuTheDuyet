@@ -1,0 +1,46 @@
+/* src/styles/slide.css */
+.slick-slider {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center; /* Căn giữa tất cả các phần tử con trong slider */
+    object-position: center; /* Đặt vị trí của ảnh vào trung tâm */
+    object-fit: cover;
+  }
+  
+  .slick-slide {
+    display: inline-block; /* Hiển thị các slide theo chiều ngang */
+  }
+  
+  .slick-prev,
+  .slick-next {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    color: #ddd;
+  }
+  
+  .slick-dots {
+    bottom: 20px;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #ddd;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #fff;
+  }
+  
+  /* Kích thước cố định cho ảnh */
+  
+  .slick-slide img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    
+    
+  }

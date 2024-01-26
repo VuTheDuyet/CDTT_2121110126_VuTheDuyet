@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Brand extends Model
 {
     use HasFactory;
-    protected $table='db_brand'; 
+    protected $table = 'db_brand';
 
+    public function product()
+    {
+        return $this->hasMany(Product::class);
+    }
 }

@@ -1,0 +1,51 @@
+/* src/styles/buyerCardProduct.css */
+.buyer-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    width: 200px; /* Điều chỉnh kích thước theo ý muốn */
+  }
+  
+  .buyer-card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .buyer-card-body {
+    padding: 10px;
+  }
+  
+  .buyer-card-name {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .buyer-card-price {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .buyer-card-function {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buyer-card-add-to-cart,
+  .buyer-card-view {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .buyer-card-add-to-cart {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .buyer-card-view {
+    background-color: #007bff;
+    color: #fff;
+  }
+  

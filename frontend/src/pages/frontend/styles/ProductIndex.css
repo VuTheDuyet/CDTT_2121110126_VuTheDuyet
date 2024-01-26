@@ -1,0 +1,15 @@
+/* src/pages/buyer/BuyerProductIndex.css */
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* hoặc space-between */
+  }
+  
+  .buyer-card-product {
+    width: 23%; /* 23% để đảm bảo có đủ không gian cho 4 sản phẩm */
+    margin-bottom: 20px;
+  }
+  
+  /* Add any additional styling as needed */
+  

@@ -7,8 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Orderdetail extends Model
 {
- 	use HasFactory;
-    protected $table='db_orderdetail';
+    use HasFactory;
+    protected $table = 'db_orderdetail';
     public $timestamps = false;
-}
 
+    public function order()
+    {
+        return $this->belongsTo(Order::class, 'order_id', 'id');
+    }
+}

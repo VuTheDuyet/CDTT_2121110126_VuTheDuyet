@@ -8,6 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Menu extends Model
 {
     use HasFactory;
-    protected $table='db_menu';
+    protected $table = 'db_menu';
 }
-

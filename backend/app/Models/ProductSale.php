@@ -7,7 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class ProductSale extends Model
 {
-use HasFactory;
-protected $table='db_productsale';
+    use HasFactory;
+    protected $table = 'db_productsale';
+    
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
+    }
 }
-
